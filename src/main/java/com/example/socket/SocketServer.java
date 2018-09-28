@@ -87,7 +87,7 @@ public class SocketServer {
                 rBuffer.flip();
                 requestMsg = String.valueOf(cs.decode(rBuffer).array());
             }
-            String responseMsg = "已收到客户端的消息,我是q电后台...:" + requestMsg;
+            String responseMsg = "hello,welcome to qd...:" + requestMsg;
             System.out.println(responseMsg);
             //返回数据
             sBuffer = ByteBuffer.allocate(responseMsg.getBytes("UTF-8").length);
